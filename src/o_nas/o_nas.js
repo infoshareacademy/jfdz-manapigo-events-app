@@ -4,19 +4,23 @@
 var React = require('react');
 //var ReactDOM = require('react-dom');
 
+import piotrekSrc from './img/piotrek.gif'
+import grzegorzSrc from './img/grzegorz1.png'
+import marekSrc from './img/marek1.png'
+
 var Piotrek = {
     title: "...has not delivered the description of himself",
-    src: img/piotrek.gif
+    src: piotrekSrc
 };
 
 var Grzegorz = {
     title: "Computer graphics, desktop publishing and websites design are what he feels most comfortable with",
-    src: img/grzegorz1.png
+    src: grzegorzSrc
 };
 
 var Marek = {
     title: "The one who loves to spend his time in an active way, extremely keen on new technologies.",
-    src: img/marek1.png
+    src: marekSrc
 };
 
 var persons = React.createClass({
