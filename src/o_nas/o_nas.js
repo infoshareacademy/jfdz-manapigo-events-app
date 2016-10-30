@@ -23,7 +23,7 @@ var Marek = {
     src: marekSrc
 };
 
-var persons = React.createClass({
+var Persons = React.createClass({
     render: function() {
         return (
             <div>
@@ -40,7 +40,4 @@ var persons = React.createClass({
     }
 });
 
-ReactDOM.render(
-    <persons />,
-    document.getElementsByClassName('app')
-);
+export default Persons;
