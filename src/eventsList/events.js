@@ -1,25 +1,28 @@
 import React from 'react'
 import {Grid,Col,Row,Thumbnail} from 'react-bootstrap'
-//import { connect } from 'react-redux'
+import { connect } from 'react-redux'
 
 import  ButtonsEvent  from './Buttons/buttons'
 
+const mapStateToProps = (state) => ({
+    events: state.eventsData.events,
+    isLoading: state.eventsData.isLoading
+})
 
-export default class events extends React.Component {
-    render() {
-        return (
+const events = ({events,isLoading}) =>(
             <Grid>
                 <Row>
+                    {events.map(event =>
                     <Col xs={12} md={4} lg={3}>
-                        <Thumbnail src="/images/focia.jpg" >
-                            <h3>Thumbnail label</h3>
-                            <p>Description enjjncc ndndndnd xnxnn s ddmdmd c dcm dmc</p>
+                        <Thumbnail src={event.img} >
+                            <h3>{event.type}</h3>
+                            <p>{event.date}</p>
                             <ButtonsEvent/>
                         </Thumbnail>
-                    </Col>
+                    </Col>)}
                 </Row>
             </Grid>
         );
-    }
-}
 
+
+ export default connect(mapStateToProps)(events)
