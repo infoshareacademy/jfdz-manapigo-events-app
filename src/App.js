@@ -1,23 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import O_nas from './o_nas/o_nas';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-            <O_nas />
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import { Grid, Row, Col } from 'react-bootstrap'
 
-export default App;
+import Menu from './menu/menu'
+
+const App = ({
+    children
+}) => (
+    <Grid>
+        <Row>
+            <Col>
+                <Menu />
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                {children}
+            </Col>
+        </Row>
+    </Grid>
+)
+
+export default App

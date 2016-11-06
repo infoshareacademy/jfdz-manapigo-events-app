@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import events  from './eventsList/events'
 import './index.css';
 
 import {
@@ -18,7 +19,9 @@ import { Provider } from 'react-redux';
 ReactDOM.render(
     <Provider >
         <Router history={browserHistory}>
-            <Route path="/" component={App} />
+            <Route path="/" component={App} >
+                <Route path="/events" component={events} />
+            </Route>
         </Router>
     </Provider>,
     document.getElementById('root')
