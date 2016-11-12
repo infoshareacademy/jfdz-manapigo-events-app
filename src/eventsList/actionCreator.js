@@ -3,7 +3,8 @@
  */
 import {
     REQUEST_EVENTS,
-    RECEIVE_EVENTS
+    RECEIVE_EVENTS,
+    ACTIVE_FILTER
 } from './actionTypes'
 
 import fetch from 'isomorphic-fetch'
@@ -29,5 +30,12 @@ export function fetchEvents() {
         return fetch(`${process.env.PUBLIC_URL}/data/events.json`)
             .then(response => response.json())
             .then(events => dispatch(receiveEvents(events)))
+    }
+}
+
+export function activeFilter(filterName) {
+    return {
+        type : ACTIVE_FILTER,
+        filterName : filterName
     }
 }
