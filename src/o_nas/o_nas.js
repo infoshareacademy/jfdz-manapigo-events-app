@@ -1,6 +1,30 @@
-/**
- * Created by Marek on 28.10.2016.
- */
+import React from 'react';
+
+import { Grid, Row, Col, Image } from 'react-bootstrap';
+
+const authorsPhotos = (props) => (
+    <Grid>
+        <Row>
+            <Col xs={6} md={4}>
+                <Image src="./img/piotrek.gif" circle />
+            </Col>
+            <Col xs={6} md={4}>
+                <Image src="./img/grzegorz1.png" circle />
+            </Col>
+            <Col xs={6} md={4}>
+                <Image src="./img/marek1.png" circle />
+            </Col>
+        </Row>
+    </Grid>
+);
+
+export default authorsPhotos;
+
+//ReactDOM.render(photoAuthors, mountNode);
+
+
+
+/*
 var React = require('react');
 //var ReactDOM = require('react-dom');
 
@@ -32,7 +56,7 @@ var Persons = React.createClass({
 
                 <p>{Grzegorz.title}</p>
                 <img src = {Grzegorz.src}/>
-            
+
                 <p>{Marek.title}</p>
             <img src = {Marek.src}/>
             </div>
@@ -41,3 +65,5 @@ var Persons = React.createClass({
 });
 
 export default Persons;
+
+*/
