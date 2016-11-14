@@ -1,18 +1,21 @@
 import React from 'react';
 
 import { Grid, Row, Col, Image } from 'react-bootstrap';
+import PiotrekUrl from './img/herb.png';
+import GrzegorzUrl from './img/grzegorz.jpg';
+import MarekUrl from './img/marek.jpg';
 
 const authorsPhotos = (props) => (
     <Grid>
         <Row>
-            <Col xs={6} md={4}>
-                <Image src="./img/piotrek.gif" circle />
+            <Col xs={12} md={4} lg={3}>
+                <Image src={PiotrekUrl} rounded />
             </Col>
-            <Col xs={6} md={4}>
-                <Image src="./img/grzegorz1.png" circle />
+            <Col xs={12} md={4} lg={3}>
+                <Image src={GrzegorzUrl} rounded />
             </Col>
-            <Col xs={6} md={4}>
-                <Image src="./img/marek1.png" circle />
+            <Col xs={12} md={4} lg={3}>
+                <Image src={MarekUrl} rounded />
             </Col>
         </Row>
     </Grid>
