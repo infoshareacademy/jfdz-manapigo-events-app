@@ -2,10 +2,10 @@ import React from 'react'
 import {Grid,Col,Row,Thumbnail} from 'react-bootstrap'
 import { connect } from 'react-redux'
 
-import  {activeFilter}  from './actionCreator'
+import  {activeFilter,resetFilters}  from './actionCreator'
 import  ButtonsEvent  from './Buttons/buttons'
-import  FiltersOptions from './FiltersOption/FiltersOptions'
-import filters from './filters'
+import  FiltersButton from './FiltersOption/FiltersButton/FiltersButton'
+
 
 
 const mapStateToProps = (state) => ({
@@ -14,22 +14,33 @@ const mapStateToProps = (state) => ({
     activeFilterName: state.eventsData.activeFilterName,
 })
 
+
 const mapDispatchToProps = (dispatch) =>({
-    activeFilter: (filterName) => dispatch(activeFilter(filterName))
+    activeFilter : (filterName) => dispatch(activeFilter(filterName)),
+    resetFilter : () => dispatch(resetFilters()),
+
 })
+
 
 const events = (
     {
         events,
         isLoading,
         activeFilter,
-        activeFilterName
+        activeFilterName,
+        resetFilter,
+
     }) =>(
             <Grid>
-                <FiltersOptions activeFilter={activeFilter}/>
+                <FiltersButton activeFilter={activeFilter} resetFilter={resetFilter}  />
                 <Row>
                     {isLoading ? 'Loading events...' : null}
-                    {events.filter(event => filters[activeFilterName]).map(event =>
+                    {events
+                        .filter(
+                            event => activeFilterName.length > 0 ? activeFilterName
+                                .indexOf(event.type) !== -1 : true
+                        )
+                        .map(event =>
                     <Col xs={12} md={4} lg={3}>
                         <Thumbnail src={event.img} >
                             <h3>{event.type}</h3>

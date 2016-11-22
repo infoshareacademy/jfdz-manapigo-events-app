@@ -4,12 +4,12 @@
 import React from "react"
 import {Button,ButtonToolbar} from 'react-bootstrap'
 
-export default ({activeFilter})=> (
+export default ({activeFilter,resetFilter})=> (
     <ButtonToolbar>
-        <Button onClick = {() => activeFilter('praca')} bsStyle="success">Praca</Button>
-        <Button onClick = {() => activeFilter('sport')} bsStyle="info">sport</Button>
-        <Button onClick = {() => activeFilter('rozrywka')} bsStyle="warning">Kulinarne frykasy</Button>
-        <Button onClick = {() => activeFilter('niunie')} bsStyle="danger">niunie</Button>
-        <Button onClick = {() => activeFilter('all')} bsStyle="danger">usun filtry</Button>
+        <Button onClick = {() => activeFilter('praca')} bsStyle='default'>Praca</Button>
+        <Button onClick = {() => activeFilter('sport')} bsStyle="default">sport</Button>
+        <Button onClick = {() => activeFilter('rozrywka')} bsStyle="default">Kulinarne frykasy</Button>
+        <Button onClick = {() => activeFilter('niunie')} bsStyle="default">niunie</Button>
+        <Button onClick = {() => resetFilter()} bsStyle="default">usun filtry</Button>
     </ButtonToolbar>
 )

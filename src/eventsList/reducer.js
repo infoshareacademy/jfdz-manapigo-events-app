@@ -5,15 +5,17 @@
 import {
     REQUEST_EVENTS,
     RECEIVE_EVENTS,
-    ACTIVE_FILTER
+    ACTIVE_FILTER,
+    RESET_FILTER,
 } from './actionTypes'
 
 const initialState = {
     events : [],
-    activeFilterName : ['all'],
+    activeFilterName : [],
     availableFilters : ['all','sport','praca','niunie','rozrywka'],
     isLoading: false
 }
+
 
 
 export default (state = initialState, action) => {
@@ -28,8 +30,24 @@ export default (state = initialState, action) => {
                 events: action.events
             })
         case ACTIVE_FILTER:
-            return Object.assign({},state, {
-                filterName:action.filterName
+            let isCategoryFilterActive = state.activeFilterName
+                    .indexOf(action.filterName) !== -1;
+
+            return isCategoryFilterActive ?
+                Object.assign({}, state, {
+                    activeFilterName: state.activeFilterName
+                        .filter(
+                            filters =>
+                                filters !== action.filterName)
+                })
+                : Object.assign({},state, {
+                activeFilterName: state.activeFilterName
+                    .concat(action.filterName)
+            })
+
+        case  RESET_FILTER:
+            return Object.assign({}, state, {
+                activeFilterName :  []
             })
         default:
             return state

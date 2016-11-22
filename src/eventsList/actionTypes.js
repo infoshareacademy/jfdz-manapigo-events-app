@@ -4,3 +4,4 @@
 export const REQUEST_EVENTS = 'events/REQUEST_EVENTS'
 export const RECEIVE_EVENTS = 'events/RECEIVE_EVENTS'
 export const ACTIVE_FILTER = 'events/ACTIVE_FILTERS'
+export const RESET_FILTER = 'events/RESET_FILTERS'

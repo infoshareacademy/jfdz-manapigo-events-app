@@ -4,7 +4,8 @@
 import {
     REQUEST_EVENTS,
     RECEIVE_EVENTS,
-    ACTIVE_FILTER
+    ACTIVE_FILTER,
+    RESET_FILTER,
 } from './actionTypes'
 
 import fetch from 'isomorphic-fetch'
@@ -37,5 +38,14 @@ export function activeFilter(filterName) {
     return {
         type : ACTIVE_FILTER,
         filterName : filterName
+
     }
 }
+
+
+export function resetFilters(){
+    return {
+        type:RESET_FILTER,
+    }
+}
+
