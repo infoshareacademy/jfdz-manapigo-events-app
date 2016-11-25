@@ -1,31 +1,66 @@
 import React from 'react';
 
-import {Grid, Row, Col, Image,} from 'react-bootstrap';
+import {Grid, Row, Col, Image, Thumbnail, Panel} from 'react-bootstrap';
 import PiotrekUrl from './img/herb.png';
 import GrzegorzUrl from './img/grzegorz.jpg';
 import MarekUrl from './img/marek.jpg';
 
-const authorsPhotos = (props) => (
-    <Grid>
+const panelTitle = (
+    <h3>O autorach</h3>
+);
+
+//const authorsPhotos
+const panelAuthors = (props) => (
+    <div>
+        <Panel header={panelTitle}>
+        <Grid>
         <Row>
-            <Col xs={12} md={4} lg={3}>
-                <Image src={PiotrekUrl} rounded/>
-
-            </Col>
-            <Col xs={12} md={4} lg={3}>
-                <Image src={GrzegorzUrl} rounded/>
-
-            </Col>
-            <Col xs={12} md={4} lg={3}>
+            <Col xs={12} md={6} lg={3}>
                 <div style={{textAlign: 'center'}}>
-                    <Image src={MarekUrl} rounded/>
+                    <Thumbnail src={PiotrekUrl} >
+                    <h3>
+                        Piotrek
+                    </h3>
+                    <p>
+                        Paragraph
+                    </p>    
+                    </Thumbnail>
+                </div>
+            </Col>
+            
+            <Col xs={12} md={6} lg={3}>
+                <div style={{textAlign: 'center'}}>
+                    <Thumbnail src={GrzegorzUrl} >
+                        <h3>
+                        Grzegorz
+                        </h3>
+                    <p>
+                        Computer graphics, desktop publishing and websites design are what he feels most comfortable with
+                    </p>
+                    </Thumbnail>
+                </div>
+            </Col>  
+
+            <Col xs={12} md={6} lg={3}>
+                <div style={{textAlign: 'center'}}>
+                    <Thumbnail src={MarekUrl} >
+                    <h3>
+                        Marek
+                    </h3>
+                    <p>
+                        The one who loves to spend his time in an active way, extremely keen on new technologies.
+                    </p>
+                    </Thumbnail>
                 </div>
             </Col>
         </Row>
-    </Grid>
+        </Grid>
+        </Panel>
+    </div>
+    
 );
 
-export default authorsPhotos;
+export default panelAuthors;
 
 //ReactDOM.render(photoAuthors, mountNode);
 
