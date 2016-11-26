@@ -4,6 +4,8 @@ import { Grid, Row, Col } from 'react-bootstrap'
 
 import Menu from './menu/menu'
 import O_nas from './o_nas/o_nas'
+import Zajawka from './zajawka/Zajawka'
+
 
 const App = ({
     children
@@ -12,6 +14,11 @@ const App = ({
         <Row>
             <Col>
                 <Menu />
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                <Zajawka />
             </Col>
         </Row>
         <Row>
