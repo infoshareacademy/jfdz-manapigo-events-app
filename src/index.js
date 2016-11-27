@@ -22,7 +22,6 @@ import { fetchEvents } from './eventsList/actionCreator'
 
 function fetchAllData() {
     store.dispatch(fetchEvents())
-
 }
 
 

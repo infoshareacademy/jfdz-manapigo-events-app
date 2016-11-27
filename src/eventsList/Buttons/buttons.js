@@ -4,15 +4,24 @@
 import React from 'react'
 import {Button} from 'react-bootstrap'
 import './buttons.css'
-import Heart from '../GlyphIcon_heart/heart'
 
-export default class ButtonsEvent extends React.Component {
-    render() {
-        return (
+import { connect } from 'react-redux'
+import { savingData } from './actionCreators'
+
+const mapStateToProps = (state) => ({
+    calendars: state.buttonData.calendars,
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    savingData: (calendar) => dispatch(savingData(calendar)),
+
+})
+
+
+const buttons = (savingData) => (
             <div>
-                <Button bsStyle="primary">Button</Button>
-                <Heart/>
+                <Button onClick={() => savingData()} bsStyle="primary">Dodaj do Kalendarza</Button>
             </div>
-        )
-    }
-}
+)
+
+export default connect(mapStateToProps, mapDispatchToProps)(buttons)

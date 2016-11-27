@@ -1,50 +1,74 @@
 [
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
-    "date" : "12/11/20483",
-    "type" : "sport"
+    "img" : "img/kontrabas.jpg",
+    "title": "V Pomorskie Dni Kontrabasowe",
+    "describtion" : "Gwiazda Festiwalu – Miloslav Gajdoš – kontrabas z towarzyszeniem kwintetu fortepianowego Akademii Muzycznej im. S. Moniuszki w Gdańsku ",
+    "allDay": true,
+    "start": "new Date(2015, 3, 0)",
+    "end": "new Date(2015, 3, 0)"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/klarn.jpg",
+    "title":"Koncert studentów klas klarnetu",
+    "describtion" :"Koncert studentów klas klarnetu prof. dra hab. Bogdana Ocieszaka, dra Grzegorza Wieczorka i dra Andrzeja Wojciechowskiego w Gdańsku" ,
     "date" : "12/11/20483",
-    "type" : "praca"
+    "type" : "muzyka"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/piano.jpg",
+    "title" : "Zajęcia muzyczne: pianino ",
+    "describtion" :"Program zajęć: poznawanie klawiatury, określanie oktawy dw. „c”,zabawy dla przygotowania dłoni, improwizacje krótkich wierszyków w Gdańsku",
     "date" : "12/11/20483",
-    "type" : "sport"
+    "type" : "muzyka"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/gitara.jpg",
+    "title": "Czwartkowe Wieczory Muzyczne",
+    "describtion" : "Czwartkowe Wieczory Muzyczne to koncerty kameralne odbywające się w każdy czwartek o godz. 18.00. Prowadzone od początku przez prof. Krzysztofa Sperskiego. ",
     "date" : "12/11/20483",
-    "type" : "sport"
+    "type" : "muzyka"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
-    "date" : "12/11/20483",
-    "type" : "religia"
-  },
-  {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/dance.jpg",
+    "title":"Taniec współczesny",
+    "describtion" : "Zajęcia prowadzone przez Agatę Gregorkiewicz - absolwentkę paryskiego Uniwersytetu Paris VIII . Ukończyła pierwszy stopień zapisu ruchu metodą Benesha w Berlinie ",
     "date" : "12/11/20483",
     "type" : "rozrywka"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/gimn.jpg",
+    "title":"Wesołe Nutki ",
+    "describtion" : "Wesołe Nutki (maluszki 4-7 lat): prowadząca: Agnieszka Krause Taniec z przyborem oraz elementy gimnastyki artystycznej  ",
     "date" : "12/11/20483",
-    "type" : "sport"
+    "type" : "rozrywka"
   },
   {
-    "img" : "img/focia.jpg",
-    "describtion" : "Impra jest tu i ludzi tłum heszke w meszke heszke w meszke heszke w meszke i tyaklie tam ",
+    "img" : "img/hip.jpg",
+    "title":"Formacja - BLITZ",
+    "describtion" : "prowadząca: Agnieszka Humięcka BLITZ two (młodzież 13-15 lat) Taniec nowoczesny, hip-hop, oldschool , new style, house, dancehall",
     "date" : "12/11/20483",
-    "type" : "praca"
+    "type" : "rozrywka"
+  },
+  {
+    "img" : "img/prof.jpg",
+    "title":"Spotkanie z prof.Żukowskim",
+    "describtion" : "Jest jednym ze światowych liderów w dziedzinie fizyki kwantowej. Podstawami mechaniki kwantowej  zajmuje się od 1987 roku. ",
+    "date" : "12/11/20483",
+    "type" : "nauka"
+  },
+  {
+    "img" : "img/eng.jpg",
+    "title":"Język angielski",
+    "describtion" : "Zapraszamy na zajęcia z języka angielskiego w grupach: początkującej oraz na poziomie średnio zaawansowanym. Zajęcia odbywają się dwa razy w tygodniu",
+    "date" : "12/11/20483",
+    "type" : "nauka"
+  },
+  {
+    "img" : "img/cer.jpg",
+    "title":" Ceramika // dzieci",
+    "describtion" : "Zajecia prowadzi Grażyna Kunicka - Absolwentka Państwowej Wyższej Szkole Sztuk Plastycznych (ASP) w Gdańsku na wydziale Malarstwa i Grafiki w pracowni prof. K. Bereżińskiego.   ",
+    "date" : "12/11/20483",
+    "type" : "nauka"
   }
+
 ]
