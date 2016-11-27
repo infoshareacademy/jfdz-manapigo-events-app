@@ -4,6 +4,7 @@ import {Grid, Row, Col, Image, Thumbnail, Panel} from 'react-bootstrap';
 import PiotrekUrl from './img/herb.png';
 import GrzegorzUrl from './img/grzegorz.jpg';
 import MarekUrl from './img/marek.jpg';
+import './o_nas.css';
 
 const panelTitle = (
     <h3>O autorach</h3>
