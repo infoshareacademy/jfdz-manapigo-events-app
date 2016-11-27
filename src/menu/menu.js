@@ -5,6 +5,8 @@ import React from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import { IndexLink } from 'react-router'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
+import Login from '../login/login'
+
 
 export default (props) => (
     <Navbar>
@@ -18,5 +20,6 @@ export default (props) => (
                 <NavItem eventKey={1} href="/events">Events</NavItem>
             </LinkContainer>
         </Nav>
+        <Login/>
     </Navbar>
 )

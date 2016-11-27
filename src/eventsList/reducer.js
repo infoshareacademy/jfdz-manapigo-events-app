@@ -12,7 +12,7 @@ import {
 const initialState = {
     events : [],
     activeFilterName : [],
-    availableFilters : ['all','sport','praca','niunie','rozrywka'],
+    availableFilters : ['all','nauka','muzyka','rozrywka'],
     isLoading: false
 }
 

@@ -6,6 +6,7 @@ import {
     RECEIVE_EVENTS,
     ACTIVE_FILTER,
     RESET_FILTER,
+
 } from './actionTypes'
 
 import fetch from 'isomorphic-fetch'
@@ -21,7 +22,7 @@ function requestEvents() {
 function receiveEvents(events) {
     return {
         type: RECEIVE_EVENTS,
-        events:events
+        events:events,
     }
 }
 
@@ -33,6 +34,8 @@ export function fetchEvents() {
             .then(events => dispatch(receiveEvents(events)))
     }
 }
+
+
 
 export function activeFilter(filterName) {
     return {
